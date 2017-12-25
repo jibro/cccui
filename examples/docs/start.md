@@ -7,7 +7,7 @@
 
 > 在使用之前，推荐学习 `Vue` 和 `ES2015` ，并正确配置 `Node.js` v6.x 或以上版本
 
-`VV-UI` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
+`chezhibao-ui` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
 - [Vue 组件](https://cn.vuejs.org/v2/guide/components.html)
 - [单文件组件](https://cn.vuejs.org/v2/guide/single-file-components.html)
 
@@ -42,7 +42,7 @@ Vue.use(VvUI)
 可以局部注册所需的组件，适用于与其他框架组合使用的场景
 
 ```js
-import { WButton } from 'vv-ui'
+import { WButton } from 'chezhibao-ui'
 
 export default {
   components: {
@@ -63,4 +63,4 @@ export default {
 
 ## 自定义主题
 
-`VV-UI` 各个组件的样式变量都存放在 `vv-ui/packages/theme-defualt/common/var.css` 文件中。用户可根据实际需要，自定义组件的样式
+`chezhibao-ui` 各个组件的样式变量都存放在 `chezhibao-ui/packages/theme-defualt/common/var.css` 文件中。用户可根据实际需要，自定义组件的样式

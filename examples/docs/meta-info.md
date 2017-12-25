@@ -25,7 +25,7 @@ export default {
       }],
       link: [{              
         rel: 'asstes',
-        href: 'https://vv-ui.github.io/VV-UI/'
+        href: 'https://chezhibao-ui.github.io/chezhibao-ui/'
       }]
     }
   }
@@ -79,7 +79,7 @@ export default {
       }],
       link: [{                 // set link
         rel: 'asstes',
-        href: 'https://vv-ui.github.io/VV-UI/'
+        href: 'https://chezhibao-ui.github.io/chezhibao-ui/'
       }]
     }
   }

@@ -1,7 +1,7 @@
 {
-  "name": "vv-ui-theme-default",
+  "name": "chezhibao-ui-theme-default",
   "version": "1.0.0",
-  "description": "vv-ui component default theme.",
+  "description": "chezhibao-ui component default theme.",
   "main": "lib/index.css",
   "scripts": {
     "start": "npm run dev",
@@ -9,7 +9,7 @@
     "build": "gulp build"
   },
   "keywords": [
-    "vv-ui",
+    "chezhibao-ui",
     "theme"
   ],
   "author": "monkeywang",

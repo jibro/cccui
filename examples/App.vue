@@ -8,14 +8,12 @@
         <router-view class="view"></router-view>
       </div>
       <router-view class="page" v-else></router-view>
-      <mainFooter v-if="!isIndex"></mainFooter>
     </div>
   </div>
 </template>
 
 <script>
   import mainHeader from './components/header.vue'
-  import mainFooter from './components/footer.vue'
   import sideNav from './components/side-nav.vue'
   import mainSkeleton from './main.skeleton.vue'
 
@@ -41,7 +39,6 @@
     components: {
       mainHeader,
       sideNav,
-      mainFooter,
       mainSkeleton
     }
   }

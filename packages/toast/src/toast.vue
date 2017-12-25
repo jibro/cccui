@@ -1,83 +1,25 @@
 <template>
-  <transition name="w-alert-fade">
-    <div>
+  <transition name="c__toast--fade">
+    <div class="c__toast" :class="['c__toast--'+position]" v-if="visible">
+      {{text}}
     </div>
   </transition>
 </template>
 <script>
-function isTextNode(vnode) {
-  if (
-    Array.isArray(vnode) &&
-    vnode.length === 1 &&
-    vnode[0].tag === undefined &&
-    vnode[0].text
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-}
 
 export default {
   name: 'CToast',
   props: {
-    title: {
+    position: {
       type: String,
-      requre: true,
-      default () {
-        const defaultNode = this.$slots.default;
-        return isTextNode(defaultNode) ? defaultNode[0].text : undefined;
-      }
-    },
-    type: {
-      type: String,
-      default: "info"
-    },
-    showIcon: {
-      type: Boolean,
-      default: false
-    },
-    center: {
-      type: Boolean,
-      default: false
-    },
-    closeText: {
-      type: String
-    },
-    closable: {
-      type: Boolean,
-      default: true
-    },
-    description: {
-      type: String
+      default: 'default'
     }
   },
-  data() {
+  data () {
     return {
-      visible: true
-    };
-  },
-  computed: {
-    typeClass() {
-      return `w-alert--${this.type}`;
-    },
-    iconClass() {
-      //暂无对应图标
-      // return `w-icon--${this.type}`
-      return "w-icon-fav";
-    },
-    isBoldTitle() {
-      return this.description ? "is-bold" : "";
-    },
-    isBigIcon() {
-      return this.description ? "is-big" : "";
-    }
-  },
-  methods: {
-    close(e) {
-      this.visible = false;
-      this.$emit("close");
+      visible: true,
+      text: ''
     }
   }
-};
+}
 </script>

@@ -58,6 +58,11 @@
       "path": "/component",
       "items": [
         {
+          "desc": "Toast",
+          "name": "toast",
+          "path": "/toast"
+        },
+        {
           "desc": "Showmore 显示更多",
           "name": "show-more",
           "path": "/showMore"

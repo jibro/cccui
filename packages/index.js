@@ -22,15 +22,15 @@ const components = [
   WShowMore,
   WLimitTextArea,
   WAlert,
-  Skeleton,
-  CToast
+  Skeleton
 ]
 
-const install = function(Vue) {
+const install = function (Vue) {
   if (install.installed) return
   components.map(component => Vue.component(component.name, component))
   MetaInfo.install(Vue)
   Vue.prototype.$loading = WLoadingBar
+  Vue.prototype.$toast = CToast
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
