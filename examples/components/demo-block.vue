@@ -54,10 +54,10 @@
     width: 100%;
     text-align: center;
     display: inline-block;
-    color: #C5D9E8;
+    color: #208ddf;
     font-size: 12px;
     padding: 10px 0;
-    background-color: #FAFBFC;
+    background-color: #e6eff8;
   }
 
   .docs-demo__code,

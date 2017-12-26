@@ -27,7 +27,15 @@ let addComponent = (router) => {
   })
 }
 addComponent(routes)
-
-export default new Router({
+let router = new Router({
   routes: routes
 })
+router.beforeEach((to, from, next) => {
+  if (document.body.clientWidth < 500 && document.querySelector('.side-nav')) {
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+    document.querySelector('.side-nav').style.display = 'none'
+  }
+  next()
+})
+export default router

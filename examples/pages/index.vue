@@ -1,13 +1,12 @@
 <template>
   <div  class="pg-index">
     <div class="index-container">
-      <img src="../assets/img/logo.png">
-      <p>一款轻量级、模块化的前端 UI 组件库</p>
+      <img src="../assets/img/logo.png" class="logo">
+      <p><span>车置宝</span>基于vue.js的移动端UI组件库</p>
     </div>
     <div class="separate-panel">
       <div class="about">
         <router-link :to="{name: 'giud'}">开始使用</router-link>
-        <a target="_blank" class="btn-github" href="https://github.com/chezhibao-ui/chezhibao-ui">GitHub</a>
       </div>
     </div>
   </div>
@@ -28,11 +27,17 @@
       width: 960px;
       margin: 0 auto;
       text-align: center;
-      padding: 100px 0;
+      padding: 15vh 0;
+      .logo{
+        width: 40vw;
+      }
       p{
-        margin-top: 56px;
+        margin-top: 8vh;
         color: #8994C6;
-        font-size: 32px;
+        font-size: 28px;
+        span{
+          color: #00a7ea;
+        }
       }
     }
     .separate-panel{

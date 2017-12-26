@@ -12,7 +12,7 @@
     "chezhibao-ui",
     "theme"
   ],
-  "author": "monkeywang",
+  "author": "wangjingbo",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",

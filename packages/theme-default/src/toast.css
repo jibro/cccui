@@ -2,13 +2,31 @@
   @e toast{
     max-width: 300px;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .4);
     position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(0, '-50%');
     color: #fff;
     border-radius: 4px;
-    font-size: var(--size-base)
+    font-size: var(--size-base);
+    z-index: 1000;
+    @m default{
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @m top{
+      top: 15px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @m center{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @m bottom{
+      bottom: 20%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }

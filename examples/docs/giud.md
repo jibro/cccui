@@ -2,7 +2,7 @@
 
 ----
 
-`chezhibao-ui` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
+`chezhibao-ui` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发移动端应用
 
 ## 特性
 
@@ -12,11 +12,4 @@
 
 ## 浏览器支持
 
-- 现代浏览器和 IE9 及以上
-- [Electron](http://electron.atom.io/)
-- [NW.js](http://nwjs.io)
-
-
-## 贡献
-
-如果你在使用 `chezhibao-ui` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/chezhibao-ui/chezhibao-ui/issues) 或 [Pull Request](https://github.com/chezhibao-ui/chezhibao-ui/pulls)
+- 现代移动端浏览器
