@@ -5,7 +5,7 @@ export default {
     showToast () {
       CToast({
         text: 'Hello World!',
-        timing: 2000,
+        timing: 2500,
         position: 'default'
       })
     }
