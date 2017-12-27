@@ -30,6 +30,7 @@ export default {
 
 ::: demo
 ```html
+<button @click="showMsgBox">showMsgBox</button>
 <script>
 import {CMsgBox} from '../../packages/index'
 export default {

@@ -9,7 +9,7 @@ export default {
   name: 'CToast',
   data () {
     return {
-      visible: true,
+      visible: false,
       text: '',
       position: ''
     }

@@ -22,10 +22,7 @@ export default {
 
 ::: demo
 ```html
-
-<div>
-  <button @click="showToast">showToast</button>
-</div>
+<button @click="showToast">showToast</button>
 <script>
 import {CToast} from '../../packages/index'
 export default {

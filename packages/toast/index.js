@@ -11,6 +11,7 @@ ToastConstructor.prototype.init = function (option = {}) {
   this.text = option.text
   this.timing = option.timing || 2500
   this.position = option.position || 'default'
+  this.visible = true
   document.body.appendChild(this.$el)
   setTimeout(() => {
     this.close()
