@@ -1,13 +1,15 @@
+@import "common/var.css";
 @b c{
   @e toast{
-    max-width: 300px;
+    max-width: var(--toast-max-width);
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: var(--toast-bgcolor);
     position: fixed;
     color: #fff;
     border-radius: 4px;
     font-size: var(--size-base);
     z-index: 1000;
+    box-sizing:border-box;
     @m default{
       top: 20%;
       left: 50%;

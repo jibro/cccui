@@ -47,6 +47,6 @@ export default {
 | 参数      | 说明                                 | 类型      | 可选值       | 默认值   |
 |---------- |------------------------------------ |---------- |------------- |-------- |
 |text      |	标题，必选参数。                     |	string   |	—           |	—       |
-|timing	      | 持续时间                           |	number   |		—           |	—       |
+|timing	      | 持续时间                           |	number   |		—           |	2500      |
 |position |	显示位置                         |	string    |	default/top/center/bottom             |	default  |
 

@@ -4,8 +4,9 @@ export default {
   methods: {
     showMsgBox () {
       CMsgBox({
-        title: 'tip',
-        message: 'Hello World!'
+        title: '提示',
+        message: '信息有误请重试！',
+        // showCancel: true
       })
     }
   }

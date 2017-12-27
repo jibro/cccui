@@ -1,5 +1,20 @@
 :root {
-
+  /* base
+  -------------------------- */
+  --size-base: 14px;
+  --color-base: #333;
+  --color-main: #00a7ea;
+  --color-999: #999;
+  --borderColor-main: #ddd;
+  
+  /* toast
+  -------------------------- */
+  --toast-max-width: 300px;
+  --toast-bgcolor: rgba(0, 0, 0, .4);
+  /* msg-box
+  -------------------------- */
+  --msg-width: 85%;
+  --msg-bgcolor: #fff;
   /* Transition
   -------------------------- */
   --all-transition: all .3s cubic-bezier(.645,.045,.355,1);
@@ -63,14 +78,10 @@
 
   /* Font
   -------------------------- */
-  --font-size-base: 14px;
+  --font-size-base: 16px;
   --font-color-base: var(--color-base-black);
   --font-color-disabled-base: #bbb;
 
-  /* Size
-  -------------------------- */
-  --size-base: 14px;
-  --color-base: #333;
   /* z-index
   -------------------------- */
   --index-normal: 1;
