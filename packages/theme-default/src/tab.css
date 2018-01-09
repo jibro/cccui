@@ -1,0 +1,43 @@
+@import "common/var.css";
+@b c{
+  @e tab{
+    background-color: var(--tab-bgcolor);
+    color: var(--color-base);
+    border-bottom: 1px solid var(--borderColor-main);
+    ul{
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        flex: 1;
+        @mixin cflex center;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          height: 60%;
+          width: 1px;
+          top: 20%;
+          right: 0;
+          background-color: var(--borderColor-main);
+        }
+        &:last-child:after{
+          width: 0;
+        }
+      }
+    }
+    @e main{
+      width: 70px;
+      height: var(--tab-hg);
+      @mixin cflex;
+      border-bottom: 2px solid var(--tab-bgcolor);
+      box-sizing: border-box;
+      font-size: var(--size-base);
+      @when active{
+        border-bottom: 2px solid var(--color-main);
+        color: var(--color-main);
+      }
+    }
+  }
+}

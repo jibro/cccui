@@ -3,7 +3,7 @@
     display: inline-block;
     margin: 32px 0;
     padding: 0;
-    color: #3F536E;
+    color: #00a7ea;
     background-color: #fff;
     z-index: 99;
     .group-container{
@@ -11,7 +11,7 @@
     }
     .side-nav-title{
       padding: 0 24px 8px;
-      color: #8DABC4;
+      color: #00a7ea;
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 1px;
@@ -25,7 +25,7 @@
         display: block;
         position: relative;
         padding: 8px 24px;
-        color: #3F536E;
+        color: #3f536e;
         font-weight: normal;
         line-height: 1.5;
         cursor: pointer;
@@ -45,7 +45,7 @@
         font-size: 14px;
       }
       .active{
-        color: #3FAAF5;
+        color: #00a7ea;
       }
     }
   }

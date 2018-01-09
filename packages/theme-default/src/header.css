@@ -1,0 +1,43 @@
+@import "common/var.css";
+@define-mixin sideCommon $left, $right { 
+  width: 100px;
+  padding: 10px $right 10px $left;
+  box-sizing: border-box;
+  font-size: 0;
+  span{
+    font-size: var(--size-base);
+    padding:0 5px;
+  }
+}
+@b c{
+  @e header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-hg);
+    background-color: var(--color-main);
+    color: #fff;
+    @e title{
+      flex:1;
+      text-align: center;
+      font-size: var(--size-main);
+    }
+    @e left{
+      @mixin sideCommon 15px,5px;
+      span{
+        @when nolefticon{
+          padding-left:0;
+        }
+      }
+    }
+    @e right{
+      @mixin sideCommon 5px,15px;
+      text-align: right;
+      span{
+        @when norighticon{
+          padding-right:0;
+        }
+      }
+    }
+  }
+}

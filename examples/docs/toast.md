@@ -18,11 +18,15 @@ export default {
 
 ### 基本用法
 页面中的浮层元素，自动消失。<br>
-<button @click="showToast">showToast</button>
+<c-button @btnClick="showToast">showToast</c-button>
 
 ::: demo
 ```html
-<button @click="showToast">showToast</button>
+<template>
+  <div>
+    <c-button @btnClick="showToast">showToast</c-button>
+  </div>
+</template>
 <script>
 import {CToast} from '../../packages/index'
 export default {
@@ -46,4 +50,5 @@ export default {
 |text      |	标题，必选参数。                     |	string   |	—           |	—       |
 |timing	      | 持续时间                           |	number   |		—           |	2500      |
 |position |	显示位置                         |	string    |	default/top/center/bottom             |	default  |
-
+### Others
+_传入的option参数若为 `string` 则解析为 `text` 值。_

@@ -19,9 +19,8 @@
 > npm i -g vue-cli
 > mkdir my-project && cd my-project
 > vue init webpack
-> npm i && npm i chezhibaoui
+> npm i && npm i chezhibaoui --save
 ```
-
 ## 标准开发
 
 实际项目中，往往会使用 `webpack` 或者 `gulp` 的工作流，大多可以做到按需加载页面用到的组件，所以不推荐直接使用 `<script>` 标签全局引入的方式使用。
@@ -32,7 +31,7 @@
 
 ```js
 import chezhibaoui from 'chezhibaoui' // 引入组件库
-import '../node_modules/chezhibaoui/packages/theme-default/lib/index.css' // 引入样式库
+import '../node_modules/packages/theme-default/lib/index.css' // 引入样式库
 
 Vue.use(chezhibaoui)
 ```

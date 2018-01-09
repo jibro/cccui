@@ -1,3 +1,4 @@
+@import "common/var.css";
 @b c{
   @e shadow{
     position: fixed;
@@ -5,7 +6,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    background: var(--shadow-bgcolor);
     z-index: 900;
   }
 }

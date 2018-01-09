@@ -26,11 +26,14 @@ export default {
 
 ### 基本用法
 页面弹出的模态框。<br>
-<button @click="showMsgBox">showMsgBox</button>
-
+<c-button @btnClick="showMsgBox">showMsgBox</c-button>
 ::: demo
 ```html
-<button @click="showMsgBox">showMsgBox</button>
+<template>
+  <div>
+    <c-button @btnClick="showMsgBox">showMsgBox</c-button>
+  </div>
+</template>
 <script>
 import {CMsgBox} from '../../packages/index'
 export default {
@@ -64,7 +67,7 @@ export default {
 |showCancel |	是否显示取消按钮       |	boolean    |	—     |	false      |
 |confirmText   |	确认按钮文字描述   |	string   |	—	      | 确定   |
 |cancelText   |	取消按钮文字描述   |	string   |	—	     | 取消   |
-
-
 ### Promise
 CMsgBox使用即产生一个Promise，你可以通过它处理confirm和cancel的事件回调。
+### Others
+_传入的option参数若为 `string` 则解析为 `message` 值。_

@@ -9,8 +9,12 @@ let CMsgBox = (option = {}) => {
 MsgBoxConstructor.prototype.init = function (option = {}) {
   this.vm = this.$mount()
   this.shadow = new ShadowConstructor().$mount()
+  if (typeof option !== 'object') {
+    this.message = option
+  } else {
+    this.message = option.message
+  }
   this.title = option.title || '提示'
-  this.message = option.message
   this.confirmText = option.confirmText || '确定'
   this.cancelText = option.cancelText || '取消'
   this.showCancel = option.showCancel || false

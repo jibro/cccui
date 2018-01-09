@@ -24,7 +24,7 @@
       padding: 0 10px;
       margin: 10px 0;
       height: 50px;
-      overflow: hidden;
+      overflow-y: auto;
       color: var(--color-999);
     }
     @e btn{
