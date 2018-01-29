@@ -1,9 +1,9 @@
 import CToast from './toast/index'
 import CMsgBox from './msg-box/index'
-import CHeader from './header/src/header'
-import CButton from './button/src/button'
-import CField from './field/src/field'
-import CTab from './tab/src/tab'
+import CHeader from './header/header'
+import CButton from './button/button'
+import CField from './field/field'
+import CTab from './tab/tab'
 
 const components = [
   CHeader,
