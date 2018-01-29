@@ -31,7 +31,7 @@
 
 ```js
 import chezhibaoui from 'chezhibaoui' // 引入组件库
-import '../node_modules/packages/theme-default/lib/index.css' // 引入样式库
+import '../node_modules/theme/lib/index.css' // 引入样式库
 
 Vue.use(chezhibaoui)
 ```

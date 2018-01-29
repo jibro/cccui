@@ -1,5 +1,5 @@
 {
-  "name": "chezhibao-ui-theme-default",
+  "name": "chezhibao-ui-theme",
   "version": "1.0.0",
   "description": "chezhibao-ui component default theme.",
   "main": "lib/index.css",

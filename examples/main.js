@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import demoBlock from './components/demo-block.vue'
 import chezhibaoUI from '../packages/index'
-import '../packages/theme-default/lib/index.css'
+import '../theme/lib/index.css'
 
 Vue.component('demo-block', demoBlock)
 Vue.use(chezhibaoUI)
